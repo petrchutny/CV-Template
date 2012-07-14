@@ -1,0 +1,107 @@
+@import "reset.css";
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../font/OpenSans300.ttf") format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../font/OpenSans400.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../font/OpenSans600.ttf") format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../font/OpenSans700.ttf") format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Viga';
+  src: url("../font/Viga400.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  padding: 60px 0 0 55px;
+}
+a,
+a:visited {
+  color: #000;
+}
+strong {
+  font-weight: 600;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+h1 {
+  position: relative;
+  left: -3px;
+  font: 400 48px Viga;
+  color: #222;
+}
+h1 span {
+  color: #999;
+}
+header {
+  font: 400 16px Open Sans;
+}
+header span {
+  font-weight: 300;
+}
+#content {
+  margin-top: 40px;
+}
+#content section {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#content section h2 {
+  width: 115px;
+  float: left;
+  padding-right: 20px;
+  font: 700 16px Open Sans;
+  text-align: right;
+  text-transform: uppercase;
+}
+#content section > div {
+  width: 495px;
+  float: left;
+  overflow: hidden;
+  padding-top: 2px;
+  font: 400 14px Open Sans;
+}
+#content section > div.h3_involved {
+  padding-top: 0px;
+}
+#content section > div > p {
+  margin-bottom: 7px;
+}
+.left {
+  margin-right: 15px;
+}
+.left p {
+  margin-bottom: 3px;
+}
+h3 {
+  float: left;
+  font: 600 16px Open Sans;
+}
+.zkusenost {
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+.zkusenost + p {
+  margin-bottom: 10px;
+}

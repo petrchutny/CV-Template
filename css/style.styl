@@ -1,0 +1,102 @@
+@import "reset.css";
+@font-face {
+    font-family 'Open Sans'
+    src url('../font/OpenSans300.ttf') format('truetype')
+    font-weight 300
+    font-style normal
+}
+@font-face {
+    font-family 'Open Sans'
+    src url('../font/OpenSans400.ttf') format('truetype')
+    font-weight 400
+    font-style normal
+}
+@font-face {
+    font-family 'Open Sans'
+    src url('../font/OpenSans600.ttf') format('truetype')
+    font-weight 600
+    font-style normal
+}
+@font-face {
+    font-family 'Open Sans'
+    src url('../font/OpenSans700.ttf') format('truetype')
+    font-weight 700
+    font-style normal
+}
+@font-face {
+    font-family 'Viga'
+    src url('../font/Viga400.ttf') format('truetype')
+    font-weight 400
+    font-style normal
+}
+
+// Basics
+
+body
+	padding 60px 0 0 55px
+a,a:visited
+	color black
+strong
+	font-weight 600
+.left
+	float left
+.right
+	float right
+
+// Hlavička
+
+h1
+	position relative
+	left -3px
+	font 400 48px Viga
+	color #222
+	span
+		color #999
+header
+	font 400 16px Open Sans
+	span
+		font-weight 300
+
+// Obsah
+
+#content
+	margin-top 40px
+	section
+		overflow hidden
+		margin-bottom 20px
+		h2
+			width 115px
+			float left
+			padding-right 20px
+			font 700 16px Open Sans
+			text-align right
+			text-transform uppercase
+		> div
+			width 495px
+			float left
+			overflow hidden
+			padding-top 2px
+			&.h3_involved
+				padding-top 0px
+			font 400 14px Open Sans
+			> p
+				margin-bottom 7px
+
+// Osobní
+
+.left
+	margin-right 15px
+	p
+		margin-bottom 3px
+
+// Zkušenosti
+
+h3
+	float left
+	font 600 16px Open Sans
+.zkusenost
+	overflow hidden
+	margin-bottom 2px
+	+ p
+		margin-bottom 10px
+
