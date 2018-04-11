@@ -1,0 +1,139 @@
+/*
+
+Theme Name: Custom Theme
+Theme URI: http://petrchutny.cz/
+Author: Petr Chutný
+Author URI: http://petrchutny.cz/
+
+*/
+
+// Bootstrap 4's Reboot variables
+
+$font-family-base: 'bio-sans', sans-serif;
+$font-size-base: 20px;
+$font-weight-base: 300;
+$line-height-base: normal;
+$body-color: #333;
+$body-bg: white;
+$headings-margin-bottom: 30px;
+$paragraph-margin-bottom: 40px;
+$dt-font-weight: 300; // For a definition list
+$link-color: #222;
+$link-decoration: underline;
+$link-hover-color: lighten($link-color, 30%);
+$link-hover-decoration: underline;
+$table-cell-padding: 5px;
+$text-muted: #444444; // E.g. or caption texts
+
+// Imports
+
+@import "reboot";
+
+// Basics
+
+body,
+html {
+	width: 100%;
+	padding: 1.5rem 1.5rem 1rem;
+}
+
+// Typography
+
+body,
+h1,
+h2,
+h3,
+p,
+span {
+	color: $body-color;
+	font-family: $font-family-base;
+	line-height: 1.4rem;
+	margin-bottom: 0;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+span.meta {
+	color: #BBB;
+}
+span.light {
+	color: #333;
+	font-weight: 400;
+}
+a {
+	transition: opacity 0.5s;
+	color: #555;
+}
+
+
+// Header
+
+header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.3rem;
+	img {
+		width: 9rem;;
+		margin-right: 1rem;
+		height: auto;
+		position: relative;
+		top: -0.5rem;
+	}
+	h1 {
+		font-size: 32px;
+		font-weight: 600;
+		margin-bottom: 0.4rem;
+		line-height: 2rem;
+	}
+	h1 + p {
+		font-size: 1.2rem;
+		margin-bottom: 1rem;
+	}
+	p {
+		margin-bottom: 10px;
+		a {
+			color: $body-color;
+			text-decoration: underline;
+		}
+	}
+}
+
+// Content
+
+.content {
+	section {
+		overflow: hidden;
+		h2 {
+			display: inline-block;
+		}
+		.section-content {
+			margin-left: 10rem;
+		    margin-top: -1.44rem;
+			.block {
+				margin-bottom: 1rem;
+				.header {
+					margin-bottom: 0.3rem;
+					h3 {
+						display: inline-block;
+						margin-bottom: 0;
+						font-weight: 600;
+						a {
+							color: #555;
+							font-size: 16px;
+							font-weight: 400;
+						}
+					}
+					span.period {
+						color: #555;
+					}
+				}
+				p {
+					margin-bottom: 0.4rem;
+				}
+			}
+		}
+	}
+}
+
+// Responsivity
+
+@import "responsivity";
